@@ -1,0 +1,26 @@
+{
+  "name": "blockonomicsTest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "netlify-lambda build functions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atiqg/Blockonomics_Assignment.git"
+  },
+  "keywords": [],
+  "author": "atiq gauri <gauriatiq@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atiqg/Blockonomics_Assignment/issues"
+  },
+  "homepage": "https://github.com/atiqg/Blockonomics_Assignment#readme",
+  "dependencies": {
+    "blockonomics": "^1.0.3",
+    "cors": "^2.8.5",
+    "https": "^1.0.0",
+    "netlify-lambda": "^2.0.1"
+  }
+}

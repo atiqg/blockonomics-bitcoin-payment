@@ -1,0 +1,128 @@
+:root {
+    /* POSITIONS */
+    --logoTop: 10%;
+    --pageTitleTop:35%;
+    --pageTitleLeft:8%;
+    --assetSectionTop: 10%;
+    --assetSectionLeft: 20%;
+    --paymentSectionTop: 10%;
+    --paymentSectionLeft: 46%;
+
+    /* MARGIN AND PADDINGS */
+    --paymentBoxMarginLeft: 10%;
+    --assetTitleMarginTop: 15%;
+    --itemTitleMarginTop: 20%;
+    --itemDescMarginTop: 3%;
+    --itemPriceMargin: 12%;
+    --buyButtonMarginTop: 2%;
+    --assetTitleMarginLeft: 8%;
+    --assetArtistMarginLeft: 13%;
+    --assetMarginLeft: 19%; 
+    --assetLabelMarginLeft: 14%;
+    --checkoutTitleMarginTop: 5%;
+    --checkoutTitleMarginLeft: 8%;
+    --AddressMarginLeft: 8%;
+    --qrMarginLeft: 23%;
+    --timerDivMarginLeft: 31%;
+    --timerDivMarginTop: 5%;
+    --AddressMarginTop: 20px;
+    --txTitleMarginTop: 15%;
+    --txTitleMarginLeft: 25%;
+    --txAmountMarginLeft: 2%;
+    --txAmountMarginTop: 10%;
+    --txStatusMarginTop: 7%;
+    --txStatusMarginLeft: 2%;
+    --txIdMarginTop: 7%;
+    --txIdMarginLeft: 2%;
+    --highResMarginTop: 12%;
+    --highResMarginLeft: 25%;
+    --loadingMarginTop: 3%;
+    --loadingMarginLeft: 0%;
+
+
+    /* SIZE */
+    --assetSectionHeight: 550px;
+    --assetSectionWidth: 400px;
+    --paymentSectionHeight: 550px;
+    --paymentSectionWidth: 500px;
+    --paymentBoxWidth: 80%;
+    --itemTitleHeight: 15%;
+    --checkoutTitleHeight: 12%;
+    --checkoutChildWidth: 85%;
+
+    /* FONT */
+    --assetTitleFont: 25px;
+    --assetArtistFont: 16px;
+    --itemTitleFont: 30px;
+    --itemDescFont: 16px;
+    --itemPriceFont: 30px;
+    --checkoutTitleFont: 25px;
+    --txTitleFont: 28px;
+
+    /* SHADOW AND BORDERS */
+    --paymentSectionBorder: 1px dashed rgb(194, 194, 194);
+}
+
+@media(max-width:500px) {
+    body{
+        /* POSITIONS */
+        --logoTop: 4%;
+        --pageTitleTop:40%;
+        --pageTitleLeft:32%;
+        --assetSectionTop: 10%;
+        --assetSectionLeft: 5%;
+        --paymentSectionTop: 99%;
+        --paymentSectionLeft: 5%;
+        --assetChildLeft: 5%;
+
+        /* MARGIN AND PADDINGS */
+        --paymentBoxMarginLeft: 10%;
+        --assetTitleMarginTop: 10%;
+        --itemTitleMarginTop: 10%;
+        --itemDescMarginTop: 3%;
+        --itemPriceMargin: 45%;
+        --buyButtonMarginTop: 8%;
+        --assetTitleMarginLeft: -3%;
+        --assetArtistMarginLeft: 4%;
+        --assetMarginLeft: 12%; 
+        --assetLabelMarginLeft: 6%;
+        --checkoutTitleMarginTop: 8%;
+        --checkoutTitleMarginLeft: 8%;
+        --AddressMarginLeft: 3%;
+        --qrMarginLeft: 10%;
+        --timerDivMarginLeft: 21.5%;
+        --timerDivMarginTop: 7%;
+        --AddressMarginTop: 10%;
+        --txTitleMarginTop: 5%;
+        --txTitleMarginLeft: 10%;
+        --txAmountMarginLeft: 8%;
+        --txAmountMarginTop: 20%;
+        --txStatusMarginTop: 10%;
+        --txStatusMarginLeft: 8%;
+        --txIdMarginTop: 15%;
+        --txIdMarginLeft: 8%;
+        --highResMarginTop: 22%;
+        --highResMarginLeft: 10%;
+        --loadingMarginTop: 280%;
+        --loadingMarginLeft: 0%;
+
+
+        /* SIZE */
+        --assetSectionHeight: 500px;
+        --assetSectionWidth: 90%;
+        --paymentSectionHeight: 550px;
+        --paymentSectionWidth: 90%;
+        --paymentBoxWidth: 80%;
+        --itemTitleHeight: 16%;
+        --checkoutTitleHeight: 10%;
+
+        /* FONT */
+        --assetTitleFont: 20px;
+        --assetArtistFont: 14px;
+        --itemTitleFont: 22px;
+        --itemDescFont: 14px;
+        --itemPriceFont: 15px;
+        --checkoutTitleFont: 18px;
+        --txTitleFont: 28px;
+    }
+}

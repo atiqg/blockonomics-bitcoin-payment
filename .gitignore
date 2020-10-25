@@ -1,0 +1,8 @@
+# .gitignore
+# generated functions
+.functions
+
+# Dependency directories
+node_modules/
+# Local Netlify folder
+.netlify

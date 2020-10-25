@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blockonomics Art</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  </head>
+  <body id="body">
+    <header class="header">
+      <img src="./assets/logo.svg" class="logo" alt="logo" draggable="false">
+      <div class="pageTitle">Blockonomics Arts</div>
+    </header>
+    <div class="mainContainer">
+      <div class="shopContainer">
+        <div class="assetSection">
+          <div class="assetTitle">Michelangelo di Lodovico</div>
+          <div class="assetArtist">by michelangelo</div>
+          <img src="./assets/low_res.jpg" id="asset" alt="art" width="250" height="325" draggable="false">
+          <div class="assetLabel">Low Resolution</div>
+        </div>
+        <div class="paymentSection" id="paymentSection">
+          <div class="box itemTitle">Grab this masterpiece at a all time low price</div>
+          <div class="box itemDescription">It is the second scene in the chronological sequence on the ceiling, depicting the third and fourth day of the Creation narrative together in on panel.</div>
+          <div class="box itemPrice">Price: $0.20</div>
+          <div class="box buyButton" onclick="get_address()">Pay with bitcoin</div>
+        </div>
+      </div>
+      <img src="./assets/loading.svg" id="loadingSvg" alt="loading" draggable="false">
+      <p id="warningText">This is a test website</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
