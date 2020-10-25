@@ -1,5 +1,5 @@
 # Blockonomics Bitcoin Payment store 
-A web app to buy art by paying in bitcoins       
+A web app to buy art by paying with bitcoins       
 
 [![screenshot](./assets/screenshot.png)](https://github.com/atiqg/blockonomics-bitcoin-payment)
 
