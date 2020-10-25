@@ -3,6 +3,8 @@ A web app to buy art by paying in bitcoins
 
 [![screenshot](./assets/screenshot.png)](https://github.com/atiqg/blockonomics-bitcoin-payment)
 
+[Try Web App](https://blockonomics-test.netlify.app/)       
+
 ## Assignment:           
 [✔️] Store contains only a single image art priced 0.20USD      
 [✔️] By default it displays thumbnail of the image    

@@ -1,10 +1,18 @@
+//MODULE TO MAKE POST REQUEST
 const https = require('https');
+//BLOCKONOMICS API KEY
 const api_key = process.env.API_KEY;
 
+//RESULT VARIABLE
 const data = JSON.stringify({
     todo: 'Buy the milk'
 });
 
+/**
+ * FUNCTION TO GET NEW/OLD BITCOIN PAYMENT ADDRESS
+ * STEP: MAKE A GET REQUEST TO BLOCKONOMICS API
+ * @param {number} reset variable to get previous address again 
+ */
 async function test(reset) {
   let path;
   
@@ -31,7 +39,7 @@ async function test(reset) {
   return await doRequest(options, data);
 }
   
-
+//END POINT FUNCTION
 exports.handler = async event => {
 
     const reset = event.queryStringParameters.reset;

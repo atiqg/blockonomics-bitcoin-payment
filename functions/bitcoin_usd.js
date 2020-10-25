@@ -1,9 +1,15 @@
+//MODULE TO MAKE POST REQUEST
 const https = require('https');
 
+//RESULT VARIABLE
 const data = JSON.stringify({
     todo: 'Buy the milk'
 });
 
+/**
+ * FUNCTION TO GET BITCOIN TO USD EXCHANGE PRICE
+ * STEP: MAKE A GET REQUEST TO BLOCKONOMICS API
+ */
 async function test() {
 
   const options = {
@@ -22,7 +28,7 @@ async function test() {
   return await doRequest(options, data);
 }
   
-
+//END POINT FUNCTION
 exports.handler = async event => {
     let result = await test();
     result = result.price;
