@@ -59,7 +59,7 @@ function payment_notifications(address){
         }    
         
         //get original asset url
-        const url = "https://blockonomics-test.netlify.app/.netlify/functions/original_art";
+        const url = 'https://blockonomics-test.netlify.app/.netlify/functions/original_art?addr='+ address +'&status='+message.status;
         fetch(url) 
         .then(response => response.text())
         .then(contents => {

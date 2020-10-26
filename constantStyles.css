@@ -1,12 +1,16 @@
 :root {
+
     /* POSITIONS */
     --logoTop: 10%;
     --pageTitleTop:35%;
-    --pageTitleLeft:8%;
+    --pageTitleLeft: 130px;
     --assetSectionTop: 10%;
-    --assetSectionLeft: 20%;
+    --assetSectionLeft: 10px;
     --paymentSectionTop: 10%;
-    --paymentSectionLeft: 46%;
+    --paymentSectionLeft: 410px;
+    --shopContainerLeft: 20vw;
+    --shopContainerTop: 6%;
+    --shopContainerPosition: absolute;
 
     /* MARGIN AND PADDINGS */
     --paymentBoxMarginLeft: 10%;
@@ -63,6 +67,8 @@
     --paymentSectionBorder: 1px dashed rgb(194, 194, 194);
 }
 
+
+
 @media(max-width:500px) {
     body{
         /* POSITIONS */
@@ -72,8 +78,11 @@
         --assetSectionTop: 10%;
         --assetSectionLeft: 5%;
         --paymentSectionTop: 99%;
-        --paymentSectionLeft: 5%;
+        --paymentSectionLeft: 20px;
         --assetChildLeft: 5%;
+        --shopContainerLeft: 'unset';
+        --shopContainerTop: 'unset';
+        --shopContainerPosition: 'unset';
 
         /* MARGIN AND PADDINGS */
         --paymentBoxMarginLeft: 10%;

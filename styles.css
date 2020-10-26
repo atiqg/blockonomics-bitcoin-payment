@@ -73,6 +73,12 @@ body{
     overflow: auto;
 }
 
+.shopContainer{
+    position: var(--shopContainerPosition);
+    left: var(--shopContainerLeft);
+    top: var(--shopContainerTop);
+}
+
 .assetSection{
     position: absolute;
     top: var(--assetSectionTop);
