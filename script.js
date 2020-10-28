@@ -119,7 +119,8 @@ var time = Date.now || function() {
  * @param {element} display html element to show timer
  */
 function startTimer(duration, display) {
-    timer = duration, minutes, seconds;
+    timer = duration;
+    var minutes, seconds;
     var myInt = setInterval(function () {
         //parse
         minutes = parseInt(timer / 60, 10);
