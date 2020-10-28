@@ -2,6 +2,8 @@
 let connection;
 //VARIABLE TO STORE EXCHANGE PRICE
 let btcUsdExc;
+//VARIABLE TO STORE PAYMENT SESSION TIMER
+let timer;
 
 
 /**
@@ -14,7 +16,7 @@ function get_address(){
     document.querySelector('#loadingSvg').style.display = 'block';
     
     console.log("started");
-    const url = "https://blockonomics-test.netlify.app/.netlify/functions/address?reset=0";
+    const url = "https://blockonomics-test.netlify.app/.netlify/functions/address?reset=1";
     fetch(url) 
     .then(response => response.text())
     .then(contents => {
@@ -48,6 +50,18 @@ function payment_notifications(address){
     //on message
     connection.onmessage = (e) => {
         let message = JSON.parse(e.data);
+
+        //IF GENERATED ADDRESS IS A TEST ADDRESS THEN SIMULATE
+        //CHECKOUT PAGE(QR CODE AND ADDRESS PAGE) BY WAITING SOMETIME ON IT
+        //AND THEN CALL PAYMENT NOTIFICATION FUNCTION AGAIN
+        if(timer && timer>590){
+            sleep(4000).then(() => {
+                connection.close();//close running web socket
+                timer = 500;//escape this if
+                payment_notifications(address);//listen payment notifications
+                return;
+            })
+        }
         
         //set transaction status
         if(message.status == 0){
@@ -105,7 +119,7 @@ var time = Date.now || function() {
  * @param {element} display html element to show timer
  */
 function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
+    timer = duration, minutes, seconds;
     var myInt = setInterval(function () {
         //parse
         minutes = parseInt(timer / 60, 10);
