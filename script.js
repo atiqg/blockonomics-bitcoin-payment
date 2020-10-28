@@ -55,8 +55,9 @@ function payment_notifications(address){
         //CHECKOUT PAGE(QR CODE AND ADDRESS PAGE) BY WAITING SOMETIME ON IT
         //AND THEN CALL PAYMENT NOTIFICATION FUNCTION AGAIN
         if(timer && timer>590){
+            connection.close();//close running web socket
+            
             sleep(4000).then(() => {
-                connection.close();//close running web socket
                 timer = 500;//escape this if
                 payment_notifications(address);//listen payment notifications
             })
