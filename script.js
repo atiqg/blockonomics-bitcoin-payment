@@ -59,8 +59,8 @@ function payment_notifications(address){
                 connection.close();//close running web socket
                 timer = 500;//escape this if
                 payment_notifications(address);//listen payment notifications
-                return;
             })
+            return;
         }
         
         //set transaction status
